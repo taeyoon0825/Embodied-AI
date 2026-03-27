@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embodied AI 소개 페이지</title>
+    <meta
+      name="description"
+      content="Embodied AI의 개념, 작동 방식, 예시, 핵심 기술, 활용성, 한계를 쉽게 이해하는 단일 소개 페이지"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero section" id="top">
+      <nav class="nav container">
+        <div class="brand">Embodied AI</div>
+        <a class="nav-link" href="#concept">개념부터 살펴보기</a>
+      </nav>
+
+      <div class="hero-content container reveal">
+        <p class="eyebrow">현실 세계와 만난 인공지능</p>
+        <h1>Embodied AI란 무엇인가?</h1>
+        <p class="subtitle">
+          몸과 감각을 가진 AI가 현실 세계를 이해하고 행동하는 방식을 설명합니다.
+        </p>
+        <p class="hero-summary">
+          Embodied AI는 텍스트나 화면 안에서만 답하는 AI를 넘어, 카메라와 센서로
+          상황을 보고 판단해 실제로 움직이고 문제를 해결하는 AI입니다.
+        </p>
+        <a class="btn-primary" href="#concept">시작하기</a>
+      </div>
+
+      <a class="scroll-indicator" href="#concept" aria-label="아래로 이동">
+        <span></span>
+      </a>
+    </header>
+
+    <main>
+      <section class="section" id="concept">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Embodied AI 개념 설명</h2>
+            <p>
+              Embodied AI는 쉽게 말해 <strong>감각하고 행동하는 인공지능</strong
+              >입니다. 카메라, 라이다, 마이크 같은 센서로 주변을 인식하고, 그
+              정보를 바탕으로 스스로 다음 행동을 결정합니다.
+            </p>
+          </div>
+          <div class="comparison-grid">
+            <article class="card reveal">
+              <div class="icon-badge">💬</div>
+              <h3>단순히 답만 하는 AI</h3>
+              <p>
+                질문을 이해하고 텍스트나 음성으로 답하는 데 강점이 있습니다.
+                하지만 실제 공간에서 직접 움직이거나 물체를 다루지는 않습니다.
+              </p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-badge">🤖</div>
+              <h3>직접 보고 판단하고 행동하는 AI</h3>
+              <p>
+                눈(카메라), 귀(마이크), 몸(로봇 팔/바퀴)처럼 작동하며, 현실에서
+                상황을 해석해 행동으로 이어집니다. Embodied AI의 핵심이 바로 이
+                점입니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="process">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Embodied AI 작동 과정</h2>
+            <p>
+              복잡해 보이지만 흐름은 비교적 명확합니다. <strong>보고 → 이해하고
+              → 계획하고 → 행동</strong>하는 4단계를 반복하며 점점 더 정확해집니다.
+            </p>
+          </div>
+          <div class="process-flow">
+            <article class="process-card reveal">
+              <div class="step">01</div>
+              <h3>Perception</h3>
+              <p>카메라와 센서로 사람, 물체, 거리, 속도 등 주변 정보를 수집합니다.</p>
+            </article>
+            <div class="arrow">→</div>
+            <article class="process-card reveal">
+              <div class="step">02</div>
+              <h3>Understanding</h3>
+              <p>수집한 데이터를 바탕으로 지금 상황이 어떤 의미인지 해석합니다.</p>
+            </article>
+            <div class="arrow">→</div>
+            <article class="process-card reveal">
+              <div class="step">03</div>
+              <h3>Planning</h3>
+              <p>목표를 이루기 위한 최선의 경로와 행동 순서를 계산합니다.</p>
+            </article>
+            <div class="arrow">→</div>
+            <article class="process-card reveal">
+              <div class="step">04</div>
+              <h3>Action</h3>
+              <p>실제 이동, 회피, 집기, 전달 같은 행동을 수행하고 결과를 다시 확인합니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="examples">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>실제 예시</h2>
+            <p>
+              Embodied AI는 이미 여러 분야에서 활용되고 있습니다. 핵심은
+              <strong>입력(무엇을 감지했는가)</strong>과
+              <strong>행동(무엇을 했는가)</strong>를 연결하는 능력입니다.
+            </p>
+          </div>
+          <div class="cards-grid">
+            <article class="card reveal">
+              <div class="icon-badge">🚗</div>
+              <h3>자율주행차</h3>
+              <p><strong>입력:</strong> 도로, 신호등, 보행자, 차량 흐름</p>
+              <p><strong>행동:</strong> 속도 조절, 차선 변경, 정지/출발 판단</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-badge">📦</div>
+              <h3>물류 로봇</h3>
+              <p><strong>입력:</strong> 창고 지도, 선반 위치, 장애물 정보</p>
+              <p><strong>행동:</strong> 최적 경로 이동, 물품 픽업/운반, 충돌 회피</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-badge">🏠</div>
+              <h3>가정용 서비스 로봇</h3>
+              <p><strong>입력:</strong> 음성 명령, 실내 구조, 사람 위치</p>
+              <p><strong>행동:</strong> 청소, 물건 전달, 상황에 맞는 보조 작업</p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-badge">🦯</div>
+              <h3>시각장애인 보조 AI</h3>
+              <p><strong>입력:</strong> 카메라 영상, 주변 소리, GPS 정보</p>
+              <p><strong>행동:</strong> 위험 요소 안내, 길 안내, 주변 상황 음성 설명</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="tech">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>활용 기술</h2>
+            <p>
+              Embodied AI는 하나의 기술이 아니라, 여러 기술이 유기적으로 결합된
+              시스템입니다.
+            </p>
+          </div>
+          <div class="cards-grid tech-grid">
+            <article class="card reveal">
+              <h3>컴퓨터 비전</h3>
+              <p>카메라로 본 장면에서 사람, 물체, 거리, 움직임을 인식하기 위해 필요합니다.</p>
+            </article>
+            <article class="card reveal">
+              <h3>자연어 처리 / LLM</h3>
+              <p>사람의 말과 의도를 이해하고, 상황에 맞는 지시 해석과 대화를 가능하게 합니다.</p>
+            </article>
+            <article class="card reveal">
+              <h3>강화학습</h3>
+              <p>시행착오를 통해 더 나은 행동 전략을 학습하고 복잡한 환경에 적응합니다.</p>
+            </article>
+            <article class="card reveal">
+              <h3>로봇 제어</h3>
+              <p>바퀴, 팔, 관절 등 하드웨어를 정밀하게 움직여 계획된 행동을 실제로 수행합니다.</p>
+            </article>
+            <article class="card reveal">
+              <h3>경로 계획</h3>
+              <p>목표 지점까지 안전하고 효율적인 이동 경로를 계산해 시간과 에너지를 절약합니다.</p>
+            </article>
+            <article class="card reveal">
+              <h3>센서 융합</h3>
+              <p>카메라·라이다·IMU 등의 정보를 통합해 한 가지 센서의 한계를 보완합니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="importance">
+        <div class="container narrow">
+          <div class="section-heading reveal">
+            <h2>왜 중요한가</h2>
+          </div>
+          <div class="highlight-panel reveal">
+            <p>
+              Embodied AI의 가장 큰 의미는 AI가 더 이상 화면 속에서만 머무르지
+              않고, 현실 세계에서 직접 행동할 수 있다는 점입니다.
+            </p>
+            <p>
+              이 능력은 산업 자동화, 의료 보조, 물류 혁신, 이동 보조, 로봇 서비스
+              같은 분야로 빠르게 확장될 수 있으며, 앞으로의 AI 발전 방향에서
+              핵심 축이 될 가능성이 큽니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="limits">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>한계와 어려움</h2>
+            <p>
+              Embodied AI는 매우 유망하지만, 해결해야 할 도전 과제도 분명합니다.
+              아래 항목들은 발전을 가로막는 문제가 아니라, 기술 성숙을 위한 핵심
+              연구 주제에 가깝습니다.
+            </p>
+          </div>
+          <div class="cards-grid">
+            <article class="card reveal">
+              <h3>현실 환경의 불확실성</h3>
+              <p>현실은 항상 변하고 예측하기 어려워, 훈련된 상황과 다른 변수에 자주 마주칩니다.</p>
+            </article>
+            <article class="card reveal">
+              <h3>센서 오류 가능성</h3>
+              <p>빛, 날씨, 소음, 가림 현상 등으로 센서 정보가 왜곡되면 판단 정확도가 떨어질 수 있습니다.</p>
+            </article>
+            <article class="card reveal">
+              <h3>실시간 처리 부담</h3>
+              <p>인식부터 행동까지 지연 없이 수행해야 하므로 높은 연산 성능과 최적화가 필요합니다.</p>
+            </article>
+            <article class="card reveal">
+              <h3>행동 실패와 안전성</h3>
+              <p>작은 판단 오류도 실제 사고로 이어질 수 있어, 안전 설계와 검증 체계가 매우 중요합니다.</p>
+            </article>
+            <article class="card reveal">
+              <h3>학습 비용과 데이터</h3>
+              <p>다양한 현실 데이터를 수집하고 학습하는 데 시간·비용·인프라가 많이 요구됩니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section closing" id="closing">
+        <div class="container narrow reveal">
+          <h2>한 문장으로 정리하면</h2>
+          <p class="closing-lead">
+            Embodied AI는 <strong>세상을 감각하고, 스스로 판단해, 실제로 행동하는
+            인공지능</strong>입니다.
+          </p>
+          <p class="closing-message">
+            AI는 이제 생각만 하는 것이 아니라, 세상 속에서 행동하기 시작했습니다.
+          </p>
+          <a class="btn-secondary" href="#top">다시 위로</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Embodied AI Intro Page</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
