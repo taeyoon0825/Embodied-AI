@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <title>Embodied AI 소개 페이지</title>
     <meta
       name="description"
-      content="Embodied AI의 개념, 작동 방식, 예시, 핵심 기술, 활용성, 한계를 쉽게 이해하는 단일 소개 페이지"
+      content="Embodied AI가 무엇인지, 어떤 방식으로 작동하고 실제 현장에서 어떻게 활용되는지 자세히 설명하는 소개 페이지"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -18,14 +18,17 @@
       </nav>
 
       <div class="hero-content container reveal">
-        <p class="eyebrow">현실 세계와 만난 인공지능</p>
+        <p class="eyebrow">현실 세계와 연결된 인공지능</p>
         <h1>Embodied AI란 무엇인가?</h1>
         <p class="subtitle">
-          몸과 감각을 가진 AI가 현실 세계를 이해하고 행동하는 방식을 설명합니다.
+          Embodied AI는 언어 이해를 넘어, 현실을 감지하고 직접 행동까지 수행하는
+          인공지능입니다.
         </p>
         <p class="hero-summary">
-          Embodied AI는 텍스트나 화면 안에서만 답하는 AI를 넘어, 카메라와 센서로
-          상황을 보고 판단해 실제로 움직이고 문제를 해결하는 AI입니다.
+          쉽게 말해 Embodied AI는 AI에 카메라, 각종 센서, 로봇의 몸과 제어
+          시스템이 결합된 형태입니다. 주변을 관찰하고, 지금 무슨 일이 일어나는지
+          해석하고, 목표에 맞는 행동을 계획한 뒤 실제 이동이나 조작으로 이어지는
+          것이 핵심입니다.
         </p>
         <a class="btn-primary" href="#concept">시작하기</a>
       </div>
@@ -41,29 +44,51 @@
           <div class="section-heading reveal">
             <h2>Embodied AI 개념 설명</h2>
             <p>
-              Embodied AI는 쉽게 말해 <strong>감각하고 행동하는 인공지능</strong
-              >입니다. 카메라, 라이다, 마이크 같은 센서로 주변을 인식하고, 그
-              정보를 바탕으로 스스로 다음 행동을 결정합니다.
+              Embodied AI는 한마디로 <strong>몸을 가진 AI</strong>입니다. 여기서
+              몸은 휴머노이드 로봇만 의미하지 않고, 자율주행차, 물류 로봇, 드론,
+              산업용 로봇 팔, 웨어러블 보조 장치처럼 현실과 상호작용할 수 있는
+              모든 물리적 장치를 포함합니다.
+            </p>
+            <p>
+              중요한 점은 이 AI가 단순히 답을 생성하는 데서 끝나지 않는다는
+              것입니다. 센서로 주변을 읽고, 현재 맥락을 이해하고, 목표를
+              달성하기 위한 행동을 계산한 뒤, 실제 움직임을 통해 결과를 바꾸는
+              닫힌 루프(closed loop)를 만듭니다.
             </p>
           </div>
           <div class="comparison-grid">
             <article class="card reveal">
               <div class="icon-badge">💬</div>
-              <h3>단순히 답만 하는 AI</h3>
+              <h3>화면 안에서 답하는 AI</h3>
               <p>
-                질문을 이해하고 텍스트나 음성으로 답하는 데 강점이 있습니다.
-                하지만 실제 공간에서 직접 움직이거나 물체를 다루지는 않습니다.
+                질문을 이해하고 텍스트나 음성으로 설명하는 데 강합니다. 검색,
+                요약, 번역, 문서 작성처럼 정보 처리 중심 작업에서 뛰어난 성능을
+                보여줍니다.
+              </p>
+              <p>
+                하지만 물체를 집거나, 공간을 이동하거나, 환경 변화에 맞춰 직접
+                반응하는 일은 스스로 수행하지 않습니다.
               </p>
             </article>
             <article class="card reveal">
               <div class="icon-badge">🤖</div>
-              <h3>직접 보고 판단하고 행동하는 AI</h3>
+              <h3>현실에서 임무를 수행하는 AI</h3>
               <p>
-                눈(카메라), 귀(마이크), 몸(로봇 팔/바퀴)처럼 작동하며, 현실에서
-                상황을 해석해 행동으로 이어집니다. Embodied AI의 핵심이 바로 이
-                점입니다.
+                카메라와 센서로 주변을 파악하고, 로봇 팔이나 바퀴, 드론 프로펠러
+                같은 하드웨어를 통해 실제 행동합니다.
+              </p>
+              <p>
+                즉, "무엇이 보이는가"를 넘어서 "지금 무엇을 해야 하는가"를
+                결정하고 바로 실행하는 것이 Embodied AI의 핵심 차이입니다.
               </p>
             </article>
+          </div>
+          <div class="highlight-panel reveal">
+            <p>
+              그래서 Embodied AI는 "답변하는 AI"에서 한 단계 더 나아가,
+              <strong>현실 속에서 작업을 수행하는 AI</strong>로 이해하면 가장
+              직관적입니다.
+            </p>
           </div>
         </div>
       </section>
@@ -73,164 +98,364 @@
           <div class="section-heading reveal">
             <h2>Embodied AI 작동 과정</h2>
             <p>
-              복잡해 보이지만 흐름은 비교적 명확합니다. <strong>보고 → 이해하고
-              → 계획하고 → 행동</strong>하는 4단계를 반복하며 점점 더 정확해집니다.
+              흐름은 비교적 명확합니다.
+              <strong>보고 → 이해하고 → 계획하고 → 행동</strong>하는 4단계를
+              빠르게 반복하면서, 환경 변화에 맞춰 계속 스스로를 수정합니다.
+            </p>
+            <p>
+              이 과정은 한 번 실행되고 끝나는 것이 아니라, 행동 결과를 다시
+              감지해 다음 판단에 반영하는 순환 구조로 동작합니다.
             </p>
           </div>
           <div class="process-flow">
             <article class="process-card reveal">
               <div class="step">01</div>
               <h3>Perception</h3>
-              <p>카메라와 센서로 사람, 물체, 거리, 속도 등 주변 정보를 수집합니다.</p>
+              <p>
+                카메라, 라이다, 깊이 센서, IMU, 힘 센서 등으로 사람, 물체, 거리,
+                속도, 방향 같은 정보를 수집합니다.
+              </p>
+              <p>
+                중요한 것은 단순 촬영이 아니라, 행동에 필요한 상태 정보를
+                추출하는 단계라는 점입니다.
+              </p>
             </article>
             <div class="arrow">→</div>
             <article class="process-card reveal">
               <div class="step">02</div>
               <h3>Understanding</h3>
-              <p>수집한 데이터를 바탕으로 지금 상황이 어떤 의미인지 해석합니다.</p>
+              <p>
+                관측한 데이터가 무엇을 의미하는지 해석합니다. 예를 들어 "앞에
+                박스가 있다"를 넘어서 "사람이 지나가고 있으니 잠시 멈춰야
+                한다"는 맥락 판단까지 포함됩니다.
+              </p>
             </article>
             <div class="arrow">→</div>
             <article class="process-card reveal">
               <div class="step">03</div>
               <h3>Planning</h3>
-              <p>목표를 이루기 위한 최선의 경로와 행동 순서를 계산합니다.</p>
+              <p>
+                목표를 달성하면서도 충돌, 지연, 실패 가능성을 줄이는 경로와 행동
+                순서를 계산합니다.
+              </p>
+              <p>
+                짧은 순간의 움직임부터 여러 단계 작업의 우선순위 조정까지 여기에
+                포함됩니다.
+              </p>
             </article>
             <div class="arrow">→</div>
             <article class="process-card reveal">
               <div class="step">04</div>
               <h3>Action</h3>
-              <p>실제 이동, 회피, 집기, 전달 같은 행동을 수행하고 결과를 다시 확인합니다.</p>
+              <p>
+                계산된 계획에 따라 실제 이동, 회피, 집기, 전달, 정지 같은 물리적
+                행동을 수행합니다.
+              </p>
+              <p>
+                결과가 예상과 다르면 즉시 다시 감지하고 계획을 수정하는 식으로
+                반복 학습과 적응이 이어집니다.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="examples">
+      <section class="section" id="usage">
         <div class="container">
           <div class="section-heading reveal">
-            <h2>실제 예시</h2>
+            <h2>어떤 방식으로 사용되는가</h2>
             <p>
-              Embodied AI는 이미 여러 분야에서 활용되고 있습니다. 핵심은
-              <strong>입력(무엇을 감지했는가)</strong>과
-              <strong>행동(무엇을 했는가)</strong>를 연결하는 능력입니다.
+              Embodied AI는 정해진 규칙만 수행하는 자동화 장치보다 훨씬 넓은
+              역할을 합니다. 현장에서 계속 바뀌는 상황을 읽고 그때그때 대응해야
+              하는 업무에서 특히 강점을 보입니다.
+            </p>
+            <p>
+              실무에서는 보통 <strong>인식 + 의사결정 + 제어</strong>를 하나의
+              서비스 흐름으로 묶어 사용합니다. 즉, 센서가 입력을 받고, AI가
+              해석하고, 로봇이나 차량이 실행하는 구조입니다.
+            </p>
+          </div>
+          <div class="cards-grid">
+            <article class="card reveal">
+              <div class="icon-badge">🏭</div>
+              <h3>반복 작업의 지능형 자동화</h3>
+              <p>
+                공장, 창고, 병원처럼 반복 업무가 많지만 환경 변수도 많은 곳에서
+                많이 사용됩니다.
+              </p>
+              <p>
+                같은 작업을 매번 똑같이 수행하는 것이 아니라, 물체 위치와 사람
+                동선, 장애물 변화를 반영해 매 순간 경로와 우선순위를 다시
+                조정합니다.
+              </p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-badge">🧑</div>
+              <h3>사람을 이해하고 보조하는 시스템</h3>
+              <p>
+                사용자의 음성, 제스처, 위치, 행동 패턴을 파악해 필요한 물리적
+                도움을 제공합니다.
+              </p>
+              <p>
+                가정용 로봇, 노약자 보조 기기, 장애인 지원 시스템처럼 "사람의
+                의도 이해"와 "현실 행동"이 동시에 필요한 서비스에서 중요합니다.
+              </p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-badge">⚠️</div>
+              <h3>위험 환경 대응</h3>
+              <p>
+                사람이 오래 머물기 어렵거나 즉각 대응이 필요한 환경에서도
+                활용됩니다. 재난 현장, 야간 순찰, 고온·고중량 작업 구역이
+                대표적입니다.
+              </p>
+              <p>
+                드론, 원격 로봇, 자율 순찰 장비는 지속적으로 주변을 감시하고,
+                이상 징후가 발견되면 경로를 바꾸거나 경고를 보내는 식으로
+                동작합니다.
+              </p>
+            </article>
+            <article class="card reveal">
+              <div class="icon-badge">⏱️</div>
+              <h3>실시간 운영 최적화</h3>
+              <p>
+                물류, 배송, 이동 보조, 자율주행처럼 판단 지연이 곧 비용이나 안전
+                문제로 이어지는 영역에서 효과가 큽니다.
+              </p>
+              <p>
+                AI가 현재 교통 흐름, 작업 대기열, 배터리 상태, 장애물 위치를
+                함께 고려해 가장 효율적인 다음 행동을 바로 결정할 수 있기
+                때문입니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="examples">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>대표 활용 사례</h2>
+            <p>
+              Embodied AI의 가치는 <strong>무엇을 감지하는가</strong>와
+              <strong>그 감지를 어떻게 행동으로 연결하는가</strong>에서
+              분명해집니다.
             </p>
           </div>
           <div class="cards-grid">
             <article class="card reveal">
               <div class="icon-badge">🚗</div>
               <h3>자율주행차</h3>
-              <p><strong>입력:</strong> 도로, 신호등, 보행자, 차량 흐름</p>
-              <p><strong>행동:</strong> 속도 조절, 차선 변경, 정지/출발 판단</p>
+              <p>
+                <strong>사용 방식:</strong> 도로 환경을 실시간 해석하며 주행
+                보조 또는 완전 자율 주행 기능을 수행합니다.
+              </p>
+              <p>
+                <strong>입력:</strong> 도로 차선, 신호등, 보행자, 주변 차량,
+                속도와 거리 정보
+              </p>
+              <p>
+                <strong>행동:</strong> 속도 조절, 차선 유지 및 변경, 정지와 출발
+                판단, 돌발 상황 회피
+              </p>
             </article>
             <article class="card reveal">
               <div class="icon-badge">📦</div>
               <h3>물류 로봇</h3>
-              <p><strong>입력:</strong> 창고 지도, 선반 위치, 장애물 정보</p>
-              <p><strong>행동:</strong> 최적 경로 이동, 물품 픽업/운반, 충돌 회피</p>
+              <p>
+                <strong>사용 방식:</strong> 창고와 물류센터에서 물품 이동, 피킹,
+                재고 보충 업무를 자동화합니다.
+              </p>
+              <p>
+                <strong>입력:</strong> 선반 위치, 주문 우선순위, 작업자 동선,
+                장애물과 통로 상태
+              </p>
+              <p>
+                <strong>행동:</strong> 최적 경로 이동, 물품 픽업과 운반, 대기열
+                재조정, 충돌 회피
+              </p>
             </article>
             <article class="card reveal">
               <div class="icon-badge">🏠</div>
               <h3>가정용 서비스 로봇</h3>
-              <p><strong>입력:</strong> 음성 명령, 실내 구조, 사람 위치</p>
-              <p><strong>행동:</strong> 청소, 물건 전달, 상황에 맞는 보조 작업</p>
+              <p>
+                <strong>사용 방식:</strong> 사람과 같은 공간을 공유하며 청소,
+                정리, 전달, 안내 같은 생활 보조 업무를 수행합니다.
+              </p>
+              <p>
+                <strong>입력:</strong> 음성 명령, 실내 구조, 가구 배치, 사람
+                위치와 움직임
+              </p>
+              <p>
+                <strong>행동:</strong> 공간을 피해 이동하고, 물건을 전달하고,
+                요청한 작업 순서에 맞게 행동을 조정
+              </p>
             </article>
             <article class="card reveal">
               <div class="icon-badge">🦯</div>
               <h3>시각장애인 보조 AI</h3>
-              <p><strong>입력:</strong> 카메라 영상, 주변 소리, GPS 정보</p>
-              <p><strong>행동:</strong> 위험 요소 안내, 길 안내, 주변 상황 음성 설명</p>
+              <p>
+                <strong>사용 방식:</strong> 사용자의 이동을 돕기 위해 주변
+                위험과 방향 정보를 실시간으로 안내합니다.
+              </p>
+              <p>
+                <strong>입력:</strong> 카메라 영상, 주변 소리, GPS, 보행 속도와
+                장애물 위치
+              </p>
+              <p>
+                <strong>행동:</strong> 위험 요소 경고, 길 안내, 주변 상황의 음성
+                설명, 이동 경로 수정 제안
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section-alt" id="tech">
+      <section class="section" id="tech">
         <div class="container">
           <div class="section-heading reveal">
-            <h2>활용 기술</h2>
+            <h2>Embodied AI를 가능하게 하는 기술</h2>
             <p>
-              Embodied AI는 하나의 기술이 아니라, 여러 기술이 유기적으로 결합된
-              시스템입니다.
+              Embodied AI는 하나의 알고리즘으로 완성되지 않습니다. 인지, 추론,
+              학습, 제어 기술이 서로 연결될 때 비로소 현실 환경에서 안정적으로
+              동작합니다.
+            </p>
+            <p>
+              실무에서는 특정 모델 하나만 쓰기보다,
+              <strong
+                >시각 인식 모델, 멀티모달 추론 모델, 행동 정책 모델, 계획·제어
+                알고리즘</strong
+              >을 함께 조합하는 방식이 일반적입니다.
             </p>
           </div>
           <div class="cards-grid tech-grid">
             <article class="card reveal">
               <h3>컴퓨터 비전</h3>
-              <p>카메라로 본 장면에서 사람, 물체, 거리, 움직임을 인식하기 위해 필요합니다.</p>
+              <p>
+                카메라 영상에서 사람, 물체, 거리, 움직임, 장면 구조를 파악해
+                "무엇이 앞에 있는가"를 이해하게 합니다.
+              </p>
+              <p>
+                <strong>대표 모델:</strong> YOLO 계열, Segment Anything(SAM),
+                DINOv2
+              </p>
             </article>
             <article class="card reveal">
-              <h3>자연어 처리 / LLM</h3>
-              <p>사람의 말과 의도를 이해하고, 상황에 맞는 지시 해석과 대화를 가능하게 합니다.</p>
+              <h3>자연어 처리 / VLM·VLA</h3>
+              <p>
+                사람의 말과 의도를 해석하고, 시각 정보와 언어 지시를 연결해 실행
+                가능한 행동 단위로 바꾸는 역할을 맡습니다.
+              </p>
+              <p><strong>대표 모델:</strong> PaLM-E, RT-2, OpenVLA</p>
             </article>
             <article class="card reveal">
-              <h3>강화학습</h3>
-              <p>시행착오를 통해 더 나은 행동 전략을 학습하고 복잡한 환경에 적응합니다.</p>
+              <h3>행동 정책 모델</h3>
+              <p>
+                로봇이 지금 본 상태와 지시를 바탕으로 다음 행동이나 제어 명령을
+                예측하는 핵심 계층입니다.
+              </p>
+              <p><strong>대표 모델:</strong> RT-1, Diffusion Policy, ACT</p>
             </article>
             <article class="card reveal">
-              <h3>로봇 제어</h3>
-              <p>바퀴, 팔, 관절 등 하드웨어를 정밀하게 움직여 계획된 행동을 실제로 수행합니다.</p>
+              <h3>강화학습 / 정책 최적화</h3>
+              <p>
+                시행착오를 통해 더 나은 행동 전략을 학습하며, 정답이 고정되지
+                않은 환경에서 성능을 높입니다.
+              </p>
+              <p><strong>대표 알고리즘:</strong> PPO, SAC, TD3</p>
             </article>
             <article class="card reveal">
-              <h3>경로 계획</h3>
-              <p>목표 지점까지 안전하고 효율적인 이동 경로를 계산해 시간과 에너지를 절약합니다.</p>
+              <h3>경로 계획 / 내비게이션</h3>
+              <p>
+                목표 지점까지 안전하고 효율적으로 이동하도록 경로와 작업 순서를
+                계산해 시간과 에너지 손실을 줄입니다.
+              </p>
+              <p><strong>대표 알고리즘:</strong> A*, RRT*, D* Lite</p>
             </article>
             <article class="card reveal">
-              <h3>센서 융합</h3>
-              <p>카메라·라이다·IMU 등의 정보를 통합해 한 가지 센서의 한계를 보완합니다.</p>
+              <h3>센서 융합 / 위치 추정</h3>
+              <p>
+                카메라, 라이다, IMU, GPS, 힘 센서 등 여러 입력을 결합해 단일
+                센서의 오차와 사각지대를 보완합니다.
+              </p>
+              <p><strong>대표 기법:</strong> EKF, Visual SLAM, ORB-SLAM</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="importance">
+      <section class="section section-alt" id="importance">
         <div class="container narrow">
           <div class="section-heading reveal">
             <h2>왜 중요한가</h2>
           </div>
           <div class="highlight-panel reveal">
             <p>
-              Embodied AI의 가장 큰 의미는 AI가 더 이상 화면 속에서만 머무르지
-              않고, 현실 세계에서 직접 행동할 수 있다는 점입니다.
+              Embodied AI의 가장 큰 의미는 AI가 더 이상 화면 속 정보 처리에만
+              머무르지 않고, 현실 세계의 결과를 직접 바꿀 수 있다는 점입니다.
             </p>
             <p>
-              이 능력은 산업 자동화, 의료 보조, 물류 혁신, 이동 보조, 로봇 서비스
-              같은 분야로 빠르게 확장될 수 있으며, 앞으로의 AI 발전 방향에서
-              핵심 축이 될 가능성이 큽니다.
+              이 능력은 단순 자동화를 넘어, 인간이 하기 어렵거나 반복적이거나
+              위험한 일을 더 유연하게 처리하게 만듭니다. 제조, 물류, 모빌리티,
+              헬스케어, 서비스 산업 전반에서 생산성과 안전성을 동시에 높일 수
+              있다는 점에서 차세대 AI의 핵심 축으로 평가됩니다.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section section-alt" id="limits">
+      <section class="section" id="limits">
         <div class="container">
           <div class="section-heading reveal">
             <h2>한계와 어려움</h2>
             <p>
-              Embodied AI는 매우 유망하지만, 해결해야 할 도전 과제도 분명합니다.
-              아래 항목들은 발전을 가로막는 문제가 아니라, 기술 성숙을 위한 핵심
-              연구 주제에 가깝습니다.
+              Embodied AI는 매우 유망하지만, 현실에서 신뢰할 수 있게 쓰이려면
+              해결해야 할 문제도 많습니다. 아래 항목은 기술 성숙도를 좌우하는
+              핵심 과제들입니다.
             </p>
           </div>
           <div class="cards-grid">
             <article class="card reveal">
               <h3>현실 환경의 불확실성</h3>
-              <p>현실은 항상 변하고 예측하기 어려워, 훈련된 상황과 다른 변수에 자주 마주칩니다.</p>
+              <p>
+                현실은 항상 변하고 예측하기 어렵기 때문에, 훈련 때 보지 못한
+                상황에서도 안정적으로 작동해야 합니다.
+              </p>
             </article>
             <article class="card reveal">
               <h3>센서 오류 가능성</h3>
-              <p>빛, 날씨, 소음, 가림 현상 등으로 센서 정보가 왜곡되면 판단 정확도가 떨어질 수 있습니다.</p>
+              <p>
+                빛, 날씨, 소음, 가림, 반사 같은 요인 때문에 센서 정보가 흔들리면
+                잘못된 판단으로 이어질 수 있습니다.
+              </p>
             </article>
             <article class="card reveal">
               <h3>실시간 처리 부담</h3>
-              <p>인식부터 행동까지 지연 없이 수행해야 하므로 높은 연산 성능과 최적화가 필요합니다.</p>
+              <p>
+                인식부터 행동까지 지연 없이 수행해야 하므로 높은 연산 성능,
+                경량화 모델, 빠른 제어 주기가 동시에 필요합니다.
+              </p>
             </article>
             <article class="card reveal">
               <h3>행동 실패와 안전성</h3>
-              <p>작은 판단 오류도 실제 사고로 이어질 수 있어, 안전 설계와 검증 체계가 매우 중요합니다.</p>
+              <p>
+                작은 판단 오류도 실제 사고로 이어질 수 있어, 검증 가능한 제어
+                로직과 안전 장치가 필수입니다.
+              </p>
             </article>
             <article class="card reveal">
               <h3>학습 비용과 데이터</h3>
-              <p>다양한 현실 데이터를 수집하고 학습하는 데 시간·비용·인프라가 많이 요구됩니다.</p>
+              <p>
+                현실 데이터를 수집하고 라벨링하며 반복 실험을 수행하는 데 많은
+                시간, 장비, 비용이 들어갑니다.
+              </p>
+            </article>
+            <article class="card reveal">
+              <h3>일반화와 책임 문제</h3>
+              <p>
+                한 환경에서 잘 작동한 정책이 다른 공간에서도 그대로 통하는지,
+                그리고 실패 책임을 어떻게 정의할지도 중요한 과제입니다.
+              </p>
             </article>
           </div>
         </div>
@@ -240,11 +465,14 @@
         <div class="container narrow reveal">
           <h2>한 문장으로 정리하면</h2>
           <p class="closing-lead">
-            Embodied AI는 <strong>세상을 감각하고, 스스로 판단해, 실제로 행동하는
-            인공지능</strong>입니다.
+            Embodied AI는
+            <strong
+              >세상을 감지하고, 맥락을 이해하고, 스스로 계획해, 실제 행동으로
+              결과를 만들어내는 인공지능</strong
+            >입니다.
           </p>
           <p class="closing-message">
-            AI는 이제 생각만 하는 것이 아니라, 세상 속에서 행동하기 시작했습니다.
+            즉, 생각하는 AI를 넘어 현실에서 일하는 AI라고 볼 수 있습니다.
           </p>
           <a class="btn-secondary" href="#top">다시 위로</a>
         </div>
